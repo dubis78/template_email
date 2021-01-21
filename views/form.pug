@@ -1,0 +1,24 @@
+extends header
+block content
+    .content-form
+        h1 login
+        form(id="login" action="/send-form" method="post")
+            .row-form
+                input(type='text'
+                    name='to' 
+                    placeholder='Email'
+                )
+            br
+            .row-form   
+                input(
+                    type='text' 
+                    name='fullName' 
+                    value='' 
+                    placeholder='Nombre Completo'
+                )
+            br     
+            input(
+                type='submit' 
+                value='Conectar'
+                class='row-form-btn'
+            )
